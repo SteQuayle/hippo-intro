@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Existing licence details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Existing licence details</h1>
+
+      <form class="form" action="/existing-licence-error" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="national-insurance-number">
+            Juggling license number
+          </label>
+          <div id="national-insurance-number-hint" class="govuk-hint">
+            It’s on your license card, correspondence letters and public performance permit. For example, ‘12 34 567 8 9’.
+          </div>
+          
+          <input class="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" spellcheck="false" aria-describedby="national-insurance-number-hint">
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

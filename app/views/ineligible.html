@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        You do not need a license at this time
+      </h1>
+
+      <p>To apply for a license you must be able to juggle.</p>
+
+      <p>Read more about <a href="/url/of/onward/page">learning to juggle</a>.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

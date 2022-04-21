@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Existing licence details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Existing licence details</h1>
+
+      <form class="form" action="/juggling-balls" method="post">
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="juggling-licence-number">
+            Juggling license number
+          </label>
+          <div id="juggling-licence-number-hint" class="govuk-hint">
+            It’s on your license card, correspondence letters and public performance permit. For example, ‘12 34 567 8 9’.
+          </div>
+        <p id="juggling-licence-number-error" class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Enter a full juggling licence number in the correct format.
+        </p>
+        <input class="govuk-input govuk-input--width-10 govuk-input--error" id="juggling-licence-number" name="juggling-licence-number" type="text" spellcheck="false" value="30 99 956 8" aria-describedby="juggling-licence-number-hint juggling-licence-number-error">
+      </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -13,32 +13,39 @@ How many balls can you currently juggle? – {{ serviceName }}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="juggling-trick" method="post">
+      <form class="form" action="/juggling-balls-answer" method="post">
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                How many balls can you currently juggle?
+                How many balls can you juggle?
               </h1>
             </legend>
             <div class="govuk-radios" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="England">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                  None - I cannot juggle
-                </label>
-              </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="2">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                <input class="govuk-radios__input" id="How-many-balls-can-you-juggle?-2" name="How-many-balls-can-you-juggle?" type="radio" value="2">
+                <label class="govuk-label govuk-radios__label" for="How many balls can you juggle?-2">
                   2
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="3 or more">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                  3 or more
+                <input class="govuk-radios__input" id="How-many-balls-can-you-juggle?-3" name="How-many-balls-can-you-juggle?" type="radio" value="3">
+                <label class="govuk-label govuk-radios__label" for="How-many-balls-can-you-juggle?-3">
+                  3
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="How-many-balls-can-you-juggle-4?" name="How-many-balls-can-you-juggle?" type="radio" value="4 or more">
+                <label class="govuk-label govuk-radios__label" for="How-many-balls-can-you-juggle?-4">
+                  4 or more
+                </label>
+              </div>
+              <div class="govuk-radios__divider">or</div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="How-many-balls-can-you-juggle?" name="How-many-balls-can-you-juggle?" type="radio" value="None - I cannot juggle">
+                <label class="govuk-label govuk-radios__label" for="How-many-balls-can-you-juggle?">
+                  None, I cannot juggle
                 </label>
               </div>
             </div>
